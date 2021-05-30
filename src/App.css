@@ -1,0 +1,21 @@
+.App {
+    max-width: 600px;
+    margin: auto;
+}
+nav ul{
+    padding: 0;
+    list-style: none;
+    display: inline-flex;
+    box-shadow: 5px 4px 0 -2px #000000;
+    margin-bottom: 30px;
+}
+
+nav ul > li > button{
+    padding: 10px 20px;
+    cursor: pointer;
+    border-width: 2px 0 2px 2px;
+    border-style: solid;
+    background-color: #fff;
+    transition: background-color 0.2s;
+}
+nav ul > li
