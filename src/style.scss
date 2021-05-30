@@ -1,7 +1,10 @@
+@import "variables";
+
 .App {
-    max-width: 600px;
+    max-width: 450px;
     margin: auto;
     padding: 100px 0;
+    font-family: cursive;
 
     //nav styles
     nav {
@@ -9,29 +12,31 @@
             padding: 0;
             list-style: none;
             display: inline-flex;
-            box-shadow: 5px 4px 0 -2px #000000;
+            box-shadow: 5px 4px 0 -2px $black;
             margin-bottom: 30px;
 
             > li {
-                background-color: #fff;
-                border: 2px solid;
+                background-color: $white;
+                border: $border-width;
                 border-right: none;
 
                 button {
-                    padding: 10px 15px;
+                    padding: 7px 15px;
                     cursor: pointer;
                     border: none;
                     background-color: transparent;
-                    transition: background-color 0.2s;
-                    font-weight: bold;
+                    transition: background-color 0.3s;
+                    font-family: cursive;
+                    font-size: 16px;
+
                 }
 
                 &.active {
-                    background-color: #9dbbed;
+                    background-color: $activeTabBg;
                 }
 
                 &:last-child {
-                    border-right: 2px solid;
+                    border-right: $border-width;
                 }
 
             }
@@ -51,14 +56,14 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                font-size: 16px;
                 padding: 10px;
-                border: 2px solid;
-                font-weight: bold;
+                border: $border-width;
                 position: relative;
                 cursor: pointer;
                 width: 100%;
-                background-color: #fff;
+                background-color: $white;
+                font-family: cursive;
+                font-size: 16px;
 
                 .accordion-icon {
                     display: flex;
@@ -66,10 +71,10 @@
                     align-items: center;
                     width: 25px;
                     height: 25px;
-                    border: 2px solid;
+                    border: $border-width;
                     border-radius: 50%;
                     font-size: 20px;
-                    background-color: #cdcccc;
+                    background-color: $gray;
                     position: relative;
 
                     &:before {
@@ -105,14 +110,15 @@
 
                     thead {
                         th {
-                            background-color: #cdcccc;
+                            background-color: $gray;
                             padding: 20px 5px;
                             text-align: left;
-                            border-right: 2px solid;
-                            border-bottom: 2px solid;
+                            border-right: $border-width;
+                            border-bottom: $border-width;
+                            font-weight: 400;
 
                             &.app-name {
-                                border-left: 2px solid;
+                                border-left: $border-width;
                             }
 
                             &.author {
@@ -128,11 +134,11 @@
                             }
 
                             td {
-                                border-right: 2px solid;
-                                border-bottom: 2px solid;
+                                border-right: $border-width;
+                                border-bottom: $border-width;
 
                                 &.app-name {
-                                    border-left: 2px solid;
+                                    border-left: $border-width;
                                 }
 
                                 &.author {

@@ -49,7 +49,6 @@ function App() {
    } else if (!dataLoaded) {
       return <div>Loading...</div>;
    } else {
-
       return (
          <div className="App">
             <NavTabs
