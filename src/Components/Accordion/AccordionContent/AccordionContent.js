@@ -4,7 +4,7 @@ import {BrowserRouter as Router, Link} from "react-router-dom";
 const AccordionContent = ({appType, title, isActive}) => {
    const [active, setActive] = useState(isActive);
 
-   {/* replace author: null or author.name: null to empty string*/}
+   /* replace author: null or author.name: null to empty string */
    const tableRows = appType.map(tr => (
          <tr key={tr.id}>
             <td className='app-name'>
